@@ -1,5 +1,6 @@
-
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAfluFciyaKQvfwG4l3llXT6KOZcvnXr_8",
@@ -10,6 +11,7 @@ const firebaseConfig = {
     appId: "1:969770039020:web:699c1234d7617a5917d7c9"
 };
 
-// Initialize Firebase
-// eslint-disable-next-line no-unused-vars
 const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(app);
+export const db = getFirestore(app);
