@@ -5,7 +5,6 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound';
 import ProtectedRoute from './components/ProtectedRoute';
-import './App.css';
 
 function App() {
   return (
