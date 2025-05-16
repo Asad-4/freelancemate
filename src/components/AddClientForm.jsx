@@ -22,7 +22,6 @@ const AddClientForm = ({ onClientAdded }) => {
     }
 
       try {
-          console.log(auth.currentUser.uid);
       setLoading(true);
       await addDoc(collection(db, 'clients'), {
         name,
@@ -40,7 +39,7 @@ const AddClientForm = ({ onClientAdded }) => {
       setError(null);
       if (onClientAdded) onClientAdded();
     } catch (e) {
-      console.error(JSON.stringify(e));
+      console.error(e);
       setError('Failed to add client');
     } finally {
       setLoading(false);
