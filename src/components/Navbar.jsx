@@ -16,7 +16,7 @@ const Navbar = () => {
         }
     }
     return (
-        <>
+        <aside className="sidebar-left">
             <nav style={{ padding: "10px", borderBottom: "1px solid #ccc" }}>
                 <Link to="/" style={{ marginRight: "10px" }}>Login</Link>
                 <Link to="/register" style={{ marginRight: "10px" }}>Register</Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 )
                 }
             </nav>  
-        </>
+        </aside>
     )
 }
 
